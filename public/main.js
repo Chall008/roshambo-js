@@ -1,6 +1,6 @@
 let player1Choice = ''
 let player2Choice = ''
-
+let wins
 function p1ChoosesRock() {
   player1Choice = 'rock'
   console.log(player1Choice)
@@ -13,8 +13,8 @@ function p1ChoosesScissors() {
   player1Choice = 'scissors'
   console.log(player1Choice)
 }
-// function p1ChoiceLizard(){}
-// function p2ChoiceSpock(){}
+// function p1ChoosesLizard(){}
+// function p2ChoosesSpock(){}
 function p2ChoosesRock() {
   player2Choice = 'rock'
   console.log(player2Choice)
@@ -27,8 +27,8 @@ function p2ChoosesScissor() {
   player2Choice = 'scissors'
   console.log(player2Choice)
 }
-// function p2ChoiceLizard()
-// function p2ChoiceSpock()
+// function p2ChoosesLizard()
+// function p2ChoosesSpock()
 
 function updatePlayer1() {
   const player1 = document.getElementById('enteredName1').value
@@ -54,6 +54,12 @@ function main() {
   const p1ScissorChoice = document.getElementById('Player1Scissors')
   p1ScissorChoice.addEventListener('click', p1ChoosesScissors)
 
+  // const p1LizardChoice = document.getElementById('Player1Lizard')
+  // p1LizardChoice.addEventListener('click', p1ChoosesLizard)
+
+  // const p1SpockChoice = document.getElementById('Player1Spock')
+  // p1SpockChoice.addEventListener('click', p1ChoosesSpock)
+
   const p2RockChoice = document.getElementById('Player2Rock')
   p2RockChoice.addEventListener('click', p2ChoosesRock)
 
@@ -63,12 +69,31 @@ function main() {
   const p2ScissorChoice = document.getElementById('Player2Scissors')
   p2ScissorChoice.addEventListener('click', p2ChoosesScissor)
 
+  // const p2LizardChoice = document.getElementById('Player2Lizard')
+  // p2SpockChoice.addEventListener('click', p2ChoosesLizard)
+
+  // const p2SpockChoice = document.getElementById('Player2Spock')
+  // p2SpockChoice.addEventListener('click', p2ChoosesSpock)
+
   if (document.getElementById('Player1Name')) {
     document.getElementById('Player1Name').textContent = 'Player 1'
   }
+
   if (document.getElementById('Player2Name')) {
     document.getElementById('Player2Name').textContent = 'Player 2'
   }
+
+  // if (player1Choice === player2Choice) return 'The result is a tie!'
+  // else if (player1Choice === p1ChoosesRock)
+  //   if (player2Choice === p2ChoosesScissor) return `${player1}`
+  //   else return 'paper wins'
+  // else if (player1Choice === 'paper') {
+  //   if (player2Choice === 'rock') return 'paper wins'
+  //   else return 'scissors wins'
+  // } else if (player1Choice === 'scissors')
+  //   if (player2Choice === 'rock') return 'rock wins'
+  //   else return 'scissors wins'
+
   document
     .getElementById('enter-name1')
     .addEventListener('click', updatePlayer1)
