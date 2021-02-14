@@ -1,6 +1,6 @@
 let player1Choice = ''
 let player2Choice = ''
-let wins
+
 function p1ChoosesRock() {
   player1Choice = 'rock'
   console.log(player1Choice)
@@ -83,15 +83,16 @@ function main() {
     document.getElementById('Player2Name').textContent = 'Player 2'
   }
 
-  // if (player1Choice === player2Choice) return 'The result is a tie!'
-  // else if (player1Choice === p1ChoosesRock)
-  //   if (player2Choice === p2ChoosesScissor) return `${player1}`
+  // if (player1Choice == player2Choice) {
+  //   return window.alert('The result is a tie!')
+  // } else if (player1Choice == p1ChoosesRock)
+  //   if (player2Choice == p2ChoosesScissor) return `${player1}`
   //   else return 'paper wins'
-  // else if (player1Choice === 'paper') {
-  //   if (player2Choice === 'rock') return 'paper wins'
+  // else if (player1Choice == 'paper') {
+  //   if (player2Choice == 'rock') return 'paper wins'
   //   else return 'scissors wins'
-  // } else if (player1Choice === 'scissors')
-  //   if (player2Choice === 'rock') return 'rock wins'
+  // } else if (player1Choice == 'scissors')
+  //   if (player2Choice == 'rock') return 'rock wins'
   //   else return 'scissors wins'
 
   document
@@ -117,9 +118,9 @@ function main() {
   // .querySelector('')
   // .addEventListener('click', )
 
-  // const replayButton = document
-  //   .querySelector('#Replay')
-  //   .addEventListener('click', replay)
+  //   const replayButton = document
+  //     .querySelector('#Replay')
+  //     .addEventListener('click', replay)
 }
 
 document.addEventListener('DOMContentLoaded', main)
