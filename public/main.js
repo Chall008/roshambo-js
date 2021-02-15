@@ -80,10 +80,10 @@ function roshamboGame(player1Choice, player2Choice) {
     (player1Choice === 'rock' && player2Choice === 'lizard') ||
     (player1Choice === 'lizard' && player2Choice === 'spock') ||
     (player1Choice === 'spock' && player2Choice === 'scissors') ||
-    (player1Choice === 'scissors' && player2choice === 'lizard') ||
-    (player1Choice === 'lizard' && player2choice === 'paper') ||
-    (player1Choice === 'paper' && player2choice === 'spock') ||
-    (player1Choice === 'spock' && player2choice === 'rock')
+    (player1Choice === 'scissors' && player2Choice === 'lizard') ||
+    (player1Choice === 'lizard' && player2Choice === 'paper') ||
+    (player1Choice === 'paper' && player2Choice === 'spock') ||
+    (player1Choice === 'spock' && player2Choice === 'rock')
   ) {
     window.alert(`${player1} vaporizes ${player2} with ${player1Choice}`)
   } else {
@@ -92,6 +92,9 @@ function roshamboGame(player1Choice, player2Choice) {
 }
 
 function main() {
+  window.alert(
+    'Welcome to Rock, Paper, Scissors, Lizard, and Spock! Player 1 goes first!'
+  )
   const p1RockChoice = document.getElementById('Player1Rock')
   p1RockChoice.addEventListener('click', p1ChoosesRock)
 
